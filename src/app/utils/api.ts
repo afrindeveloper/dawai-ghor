@@ -253,6 +253,9 @@ export const initProducts = async (defaults: Product[]): Promise<void> => {
 export const getManagedProducts = async (defaults: Product[]): Promise<Product[]> => {
   return fetchAPI('/products');
 };
+export const clearMockData = async (): Promise<void> => {
+  await fetchAPI('/admin/clear-mocks', { method: 'DELETE' });
+};
 export const updateProduct = async (id: string, product: Partial<Product>): Promise<Product> => {
   return fetchAPI(`/products/${id}`, {
     method: 'PUT',

@@ -259,6 +259,18 @@ app.post('/api/wishlist/toggle', async (req, res) => {
   }
 });
 
+// Admin Mock Data API
+app.delete('/api/admin/clear-mocks', async (req, res) => {
+  try {
+    await Message.deleteMany({ id: { $in: ['msg-001', 'msg-002', 'msg-003', 'msg-004'] } });
+    await Order.deleteMany({ id: { $in: ['ORD-2025-001', 'ORD-2025-002', 'ORD-2025-003', 'ORD-2025-004', 'ORD-2025-005', 'ORD-2025-006'] } });
+    await User.deleteMany({ id: { $in: ['user-001', 'user-002', 'user-003', 'user-004', 'user-005', 'user-006'] } });
+    res.json({ success: true });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/dawai_ghor')
   .then(() => {
     console.log('Connected to MongoDB');

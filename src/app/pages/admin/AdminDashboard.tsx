@@ -9,7 +9,7 @@ import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis,
   CartesianGrid, Tooltip, ResponsiveContainer
 } from "recharts";
-import { getAllUsers, getOrders, getMessages, Order, Message } from "../../utils/api";
+import { getAllUsers, getOrders, getMessages, clearMockData, Order, Message } from "../../utils/api";
 import { motion } from "motion/react";
 
 const revenueData = [
@@ -48,6 +48,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     async function loadData() {
+      await clearMockData().catch(() => {});
       const allUsers = await getAllUsers();
       const users = allUsers.filter(u => u.role === "user");
       const orders = await getOrders();

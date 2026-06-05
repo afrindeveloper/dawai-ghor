@@ -20,21 +20,9 @@ const DEFAULT_USERS = [
   { id: 'user-006', name: 'Roksana Parvin', email: 'roksana@example.com', phone: '+880 1717 678901', role: 'user', joinedAt: '2025-02-20', address: 'Wari, Dhaka', isActive: true },
 ];
 
-const DEFAULT_ORDERS = [
-  { id: 'ORD-2025-001', userId: 'user-001', userName: 'Rahim Uddin', userEmail: 'rahim@example.com', items: [], subtotal: 25.50, shipping: 5.99, total: 31.49, status: 'delivered', createdAt: '2025-03-15', address: 'Mirpur, Dhaka', paymentMethod: 'Cash on Delivery' },
-  { id: 'ORD-2025-002', userId: 'user-002', userName: 'Fatema Begum', userEmail: 'fatema@example.com', items: [], subtotal: 45.00, shipping: 0, total: 45.00, status: 'shipped', createdAt: '2025-04-01', address: 'Gulshan, Dhaka', paymentMethod: 'Mobile Banking' },
-  { id: 'ORD-2025-003', userId: 'user-003', userName: 'Karim Ahmed', userEmail: 'karim@example.com', items: [], subtotal: 12.99, shipping: 5.99, total: 18.98, status: 'processing', createdAt: '2025-04-10', address: 'Dhanmondi, Dhaka', paymentMethod: 'Cash on Delivery' },
-  { id: 'ORD-2025-004', userId: 'user-004', userName: 'Nasrin Khatun', userEmail: 'nasrin@example.com', items: [], subtotal: 68.50, shipping: 0, total: 68.50, status: 'pending', createdAt: '2025-04-18', address: 'Uttara, Dhaka', paymentMethod: 'Mobile Banking' },
-  { id: 'ORD-2025-005', userId: 'user-005', userName: 'Shahin Alam', userEmail: 'shahin@example.com', items: [], subtotal: 33.00, shipping: 5.99, total: 38.99, status: 'cancelled', createdAt: '2025-04-19', address: 'Mohammadpur, Dhaka', paymentMethod: 'Cash on Delivery' },
-  { id: 'ORD-2025-006', userId: 'user-006', userName: 'Roksana Parvin', userEmail: 'roksana@example.com', items: [], subtotal: 52.00, shipping: 0, total: 52.00, status: 'delivered', createdAt: '2025-04-12', address: 'Wari, Dhaka', paymentMethod: 'Mobile Banking' },
-];
+const DEFAULT_ORDERS = [];
 
-const DEFAULT_MESSAGES = [
-  { id: 'msg-001', name: 'Rahim Uddin', email: 'rahim@example.com', subject: 'Question about prescription medicines', content: 'I need to know if I can get Amoxicillin without a prescription. My doctor recommended it but I lost the prescription slip. Can you help me?', createdAt: '2025-04-15', read: true, replied: true },
-  { id: 'msg-002', name: 'Fatema Begum', email: 'fatema@example.com', subject: 'Delivery issue with my order', content: 'My order ORD-2025-002 has been showing "shipped" status for 3 days now. When will it arrive? I need the medicines urgently. Please help!', createdAt: '2025-04-17', read: true, replied: false },
-  { id: 'msg-003', name: 'Mohammad Ali', email: 'malikhbd@gmail.com', subject: 'Request to add new medicine to catalog', content: 'Can you please add Pantoprazole 40mg to your product catalog? Many customers including myself need it for gastric issues. It would be very helpful.', createdAt: '2025-04-18', read: false, replied: false },
-  { id: 'msg-004', name: 'Nasrin Khatun', email: 'nasrin@example.com', subject: 'Excellent AI chatbot experience!', content: 'The AI doctor chatbot is absolutely amazing! It helped me identify my symptoms and recommended the right medicine. Keep up the great work, DawaiGhor team!', createdAt: '2025-04-19', read: false, replied: false },
-];
+const DEFAULT_MESSAGES = [];
 
 const DEFAULT_CAROUSEL = [
   { id: 'slide-001', title: 'Your Health, Just a Click Away', subtitle: 'Get instant medical advice from our AI Doctor and order 100% authentic medicines.', image: '/images/hero_ai_health.png', badge: 'Premium Care', ctaText: 'Consult AI Doctor', ctaLink: '/ai-doctor', active: true, order: 0 },
