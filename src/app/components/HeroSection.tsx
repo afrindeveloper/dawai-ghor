@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AIDoctorChat from "./AIDoctorChat";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./common/ImageWithFallback";
 import { Sparkles, ArrowRight, Star } from "lucide-react";
 import { getCarousel, CarouselSlide } from "../utils/api";
 import { useNavigate } from "react-router";

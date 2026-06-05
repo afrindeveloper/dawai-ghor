@@ -1,7 +1,7 @@
 # DawaiGhor - Online Pharmacy Website
 
 ## Overview
-DawaiGhor is a fully functional online pharmacy website designed to match the provided Figma design pixel-perfectly. It includes modern features, smooth animations, and complete e-commerce functionality using local storage for data persistence.
+DawaiGhor is a fully functional online pharmacy website. It includes modern features, smooth animations, and complete e-commerce functionality using local storage for data persistence.
 
 ## Features
 
@@ -37,7 +37,7 @@ DawaiGhor is a fully functional online pharmacy website designed to match the pr
 - **Real-time Updates** - Cart count updates across all components
 
 ### 🎨 Design & UI
-- **Premium Design** - Matches the original Figma design exactly
+- **Premium Design** - High-quality, modern, and beautiful design
 - **Orange Color Scheme** - Primary orange (#FF6B35) used throughout
 - **Smooth Animations** - Motion animations for all interactive elements
 - **Custom Scrollbar** - Branded orange scrollbar

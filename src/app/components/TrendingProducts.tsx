@@ -4,7 +4,7 @@ import { ShoppingCart, Star, ChevronRight } from "lucide-react";
 import { Link } from "react-router";
 import { addToCart, getAdminProducts, Product } from "../utils/api";
 import { toast } from "sonner";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./common/ImageWithFallback";
 
 export default function TrendingProducts() {
   const [trendingProducts, setTrendingProducts] = useState<Product[]>([]);
